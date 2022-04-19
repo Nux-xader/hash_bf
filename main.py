@@ -22,7 +22,7 @@ def main():
     clr()
     banner()
     while True:
-        path = str(input(" Word list path : "))
+        path = str(input(" [*] Word list path : "))
         try:
             wordlist = [i for i in str(open(path, "r").read()).split("\n") if len(i) > 0]
             break
